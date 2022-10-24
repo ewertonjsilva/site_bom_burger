@@ -9,13 +9,37 @@
         <meta name="author" content="Ewerton José da Silva">
         <meta name="description" content="Venha conhecer os produtos da lanchonete BomBurguer. Oferecemos lanches, sucos e porções, além de retirada no local ou entrega.">
         <link rel="shortcut icon" href="./imagens/favicon.ico" type="image/x-icon">
+        <!-- 
+            Usar ícones: https://developers.google.com/fonts/docs/material_icons#icon_font_for_the_web 
+            Encontrar ícones: https://fonts.google.com/icons
+        -->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> 
+        <!-- Mais sobre ícones em: https://acervolima.com/como-incluir-icones-de-midia-social-em-html/ -->
         <link rel='stylesheet' href='estilos/reset.css'>
         <link rel='stylesheet' href='estilos/global.css'>
+        <link rel='stylesheet' href='estilos/nav.css'>
         <title>BomBurguer</title>
     </head>
     <body>
         <header>
-            <!-- Logo e navegaçãp -->            
+            <!-- Logo e navegaçãp -->    
+            <nav class="containerNav">
+                <div class="menu" id="idMenu">
+                    <span class="material-icons icon">
+                        fastfood
+                    </span>        
+                    <label for="" id="titulo">BomBurguer</label>
+                    <a href="#">Produtos</a>
+                    <a href="#">Cadastrar</a>
+                    <a href="#">Contato</a>
+                    <a href="#">Login</a>
+                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                        <span class="material-icons icon" id="menu">
+                            menu
+                        </span>
+                    </a>
+                </div>                
+            </nav>            
         </header>
 
         <div>

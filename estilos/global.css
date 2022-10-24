@@ -9,10 +9,10 @@ html {
 body {
     background: #f0f0f5;
     -webkit-font-smoothing: antialiased; 
-    max-width: 1168px; /* largura útil + 20 px esq e 20px dir */
+    /* max-width: 1168px; largura útil + 20 px esq e 20px dir */
     margin: 0 auto;
     background-color: #E1E2E1;
-    padding: 0 2rem 2rem 2rem;
+    /* padding: 0 2rem 2rem 2rem; */
 }
 
 body, input, button, textarea {

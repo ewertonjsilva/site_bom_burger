@@ -1,0 +1,51 @@
+.containerNav{
+    background-color: #B71C1C; 
+    color: #FAFAFA;
+}
+
+.containerNav .menu {
+    max-width: 1168px; /* largura útil + 20 px esq e 20px dir; */ 
+    height: 8.0rem;
+    padding: 0 2rem 0 2rem; 
+    font-size: 4.4rem; 
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+}
+
+.containerNav .menu .icon {
+    color: #FAFAFA; 
+    font-size: 4.4rem; 
+    user-select: none; 
+    margin: 0 2rem
+}
+
+#titulo {
+    user-select: none;
+}
+
+#menu:hover {
+    /* user-select: auto;  */
+    color: #7F0000; 
+    cursor: pointer;
+} 
+
+.containerNav .menu a {
+    border: none; 
+    border-radius: 2rem; 
+    width: 168px; 
+    height: 47px; 
+    background-color: #FAFAFA;
+    color: #B71C1C;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px; 
+    font-weight: bold;
+    margin: 0 2.4rem;
+    cursor: pointer;
+} 
+
+.containerNav .menu button:hover {
+    border-bottom: 0.4rem solid #7F0000;
+}
