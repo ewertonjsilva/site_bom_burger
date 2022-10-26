@@ -11,7 +11,7 @@ body {
     -webkit-font-smoothing: antialiased; 
     /* max-width: 1168px; largura útil + 20 px esq e 20px dir */
     margin: 0 auto;
-    background-color: #E1E2E1;
+    background-color: #FAFAFA;
     /* padding: 0 2rem 2rem 2rem; */
 }
 
@@ -19,3 +19,14 @@ body, input, button, textarea {
     font: 400 1.6rem Roboto, sans-serif;
 }
 
+@media screen and (max-width: 1000px) {
+    html {
+        font-size: 58%;
+    }
+}
+
+@media screen and (max-width: 374px) {
+    html {
+        font-size: 48%;
+    }
+}
