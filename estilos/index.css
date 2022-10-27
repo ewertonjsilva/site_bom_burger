@@ -1,13 +1,13 @@
 .slider {
     margin: 1rem auto;
-    width: 90%;
-    height: 45.5rem; 
+    width: 80rem;
+    height: 28.5rem; 
     overflow: hidden;
 }
 
 .slides {
     width: 400%;
-    height: 45.5rem; 
+    height: 28.5rem; 
     display: flex;
 }
 
@@ -17,7 +17,8 @@
 
 .slide {
     width: 25%; 
-    position: relative;
+    position: relative; 
+    transition: 2s;
 }
 
 .slide img {
@@ -27,10 +28,10 @@
 .manual-navigation {
     position: absolute;
     width: 80rem;
-    margin-top: -20rem;
+    margin-top: -3rem;
     display: flex;
-    /* justify-content: center;  */
-    /* align-items: center; */
+    justify-content: center;  
+    align-items: center;
 }
 
 .manual-btn {
@@ -51,10 +52,54 @@
 } 
 
 /* quando estiver ativo e for o primeiro slide ~ seletor irmão. */
-#radio1:checked ~ .first {
+#radio1:checked ~ .primeira {
     margin-left: 0;
 }
 
-#radio2:checked ~ .first {
+#radio2:checked ~ .primeira {
     margin-left: -25%;
+}
+
+#radio3:checked ~ .primeira {
+    margin-left: -50%;
+}
+
+#radio4:checked ~ .primeira {
+    margin-left: -75%;
+} 
+
+.navigation-auto div {
+    border: 0.2rem solid #FAFAFA;
+    padding: 0.5rem;
+    border-radius: 1rem;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.navigation-auto {
+    position: absolute;
+    width: 80rem;
+    margin-top: 25.5rem;
+    display: flex;
+    justify-content: center;
+}
+
+.navigation-auto div:not(:last-child) { 
+    margin-right: 4rem;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1 {
+    background-color: #FAFAFA;
+} 
+
+#radio2:checked ~ .navigation-auto .auto-btn2 {
+    background-color: #FAFAFA;
+}
+
+#radio3:checked ~ .navigation-auto .auto-btn3 {
+    background-color: #FAFAFA;
+}
+
+#radio4:checked ~ .navigation-auto .auto-btn4 {
+    background-color: #FAFAFA;
 }

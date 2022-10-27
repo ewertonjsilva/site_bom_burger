@@ -1,6 +1,7 @@
 let selMenu = document.getElementById("mIco");
 
-// encolhe e expande as opções de navegação
+// encolhe e expande as opções de navegação 
+// https://youtu.be/BpzyuuPIEaQ
 function mostraMenu() {
     var x = document.getElementById("mostraOpMobile");
     if (x.className === "menuMobileExpandidon") {
@@ -12,4 +13,20 @@ function mostraMenu() {
 
 selMenu.onclick = function() { 
     mostraMenu();
+}
+
+// slider
+let count = 1;
+document.getElementById("radio1").checked = true; 
+
+setInterval( function() {
+  nextImage();
+}, 3000);
+
+function nextImage() {
+  count++; 
+  if (count >4 ) {
+    count = 1;
+  }
+  document.getElementById("radio" + count).checked = true;   
 }
