@@ -1,13 +1,16 @@
 .slider {
     margin: 1rem auto;
     width: 80rem;
-    height: 28.5rem; 
-    overflow: hidden;
+    /* height: 28.5rem;  */
+    overflow: hidden; 
+    width: 100%;
+    max-width: 1128px; 
+    /* padding: 0 2rem 0 2rem;  */
 }
 
 .slides {
     width: 400%;
-    height: 28.5rem; 
+    /* height: 28.5rem;  */
     display: flex;
 }
 
@@ -22,16 +25,17 @@
 }
 
 .slide img {
-    width: 80rem; 
+    width: 100%; 
 } 
 
 .manual-navigation {
     position: absolute;
-    width: 80rem;
+    width: 100%;
     margin-top: -3rem;
     display: flex;
     justify-content: center;  
-    align-items: center;
+    align-items: center; 
+    max-width: 1128px;
 }
 
 .manual-btn {
@@ -78,10 +82,11 @@
 
 .navigation-auto {
     position: absolute;
-    width: 80rem;
-    margin-top: 25.5rem;
+    width: 100%;
+    margin-top: 37.4rem;
     display: flex;
     justify-content: center;
+    max-width: 1128px; 
 }
 
 .navigation-auto div:not(:last-child) { 
