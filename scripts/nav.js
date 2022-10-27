@@ -1,5 +1,6 @@
 let selMenu = document.getElementById("mIco");
 
+// encolhe e expande as opções de navegação
 function mostraMenu() {
     var x = document.getElementById("mostraOpMobile");
     if (x.className === "menuMobileExpandidon") {
