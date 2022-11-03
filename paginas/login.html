@@ -8,14 +8,48 @@
         <meta name='viewport' content='width=device-width, initial-scale=1.0'>
         <meta name="author" content="Ewerton José da Silva">
         <meta name="description" content="Venha conhecer os produtos da lanchonete BomBurguer. Oferecemos lanches, sucos e porções, além de retirada no local ou entrega.">
-        <link rel="shortcut icon" href="./imagens/favicon.ico" type="image/x-icon">
-        <link rel='stylesheet' href='estilos/reset.css'>
-        <link rel='stylesheet' href='estilos/global.css'>
+
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="shortcut icon" href="../imagens/favicon.ico" type="image/x-icon">
+        <link rel='stylesheet' href='../estilos/reset.css'>
+        <link rel='stylesheet' href='../estilos/global.css'>
+        <link rel='stylesheet' href='../estilos/nav.css'>
         <title>BomBurguer</title>
     </head>
     <body>
         <header>
-            <!-- Logo e navegaçãp -->            
+            <!-- Logo e navegaçãp -->  
+            <nav class="containerNav">
+                <div class="menu">
+                    <div>
+                        <span class="material-icons icon" id="logo">
+                            fastfood
+                        </span>        
+                        <label for="" id="titulo">BomBurguer</label>
+                    </div>                      
+                    <div class="menuGrande">
+                        <a href="../index.html">Home</a>                  
+                        <a href="../paginas/produtos.html">Produtos</a>
+                        <a href="../paginas/cadUsuario.html">Cadastrar</a>
+                        <a href="../paginas/contato.html">Contato</a>
+                        <a href="#" class="active">Login</a>
+                    </div>
+                    <div class="menuMobile">
+                        <a href="javascript:void(0);" class="icon" id="mIco">
+                            <span class="material-icons icon" id="menu">
+                                menu
+                            </span>
+                        </a>
+                    </div>                    
+                </div>  
+                <div class="menuMobileExpandidon" id="mostraOpMobile">  
+                    <a href="../index.html">Home</a>                  
+                    <a href="../paginas/produtos.html">Produtos</a>
+                    <a href="../paginas/cadUsuario.html">Cadastrar</a>
+                    <a href="../paginas/contato.html">Contato</a>
+                    <a href="#" class="active">Login</a>
+                </div>               
+            </nav>          
         </header>
 
         <div>

@@ -2,7 +2,6 @@
 /* SLIDER */
 .slider {
     margin: 1rem auto;
-    width: 80rem;
     /* height: 28.5rem;  */
     overflow: hidden; 
     width: 100%;
@@ -162,79 +161,6 @@
     font-size: 5rem;
     margin: 2rem 6rem; 
     cursor: pointer;
-}
-
-/* PRODUTOS */
-.prodAleatorio {
-    margin: 1rem auto;
-    display: flex; 
-    justify-content: center; 
-    max-width: 1128px; 
-    border-radius: 2rem; 
-    flex-wrap: wrap;
-}
-
-.prodAleatorio .cardProd {
-    width: 30%; 
-    height: 25rem;
-    display: flex; 
-    flex-direction: column; 
-    justify-content: center; 
-    align-items: center; 
-    border: 0.4rem solid #B71C1C; 
-    border-radius: 2rem; 
-    overflow: hidden; 
-    background-color: #B71C1C; 
-    margin: 1rem 1rem;
-}
-
-.prodAleatorio .cardProd img {
-    width: 100%; 
-    height: 80%;
-} 
-
-.prodAleatorio .cardProd span {
-    background-color: #FAFAFA; 
-    width: 100%; 
-    text-align: center;
-    font-size: 1.6rem; 
-    padding: 0.5rem;
-} 
-
-.prodAleatorio .cardProd .descricao {
-    font-weight: bold;
-}
-
-/* Rodapé */
-.rodape {
-    margin: 1rem auto;
-    display: flex; 
-    flex-direction: column;
-    justify-content: center; 
-    max-width: 1128px; 
-    border-radius: 2rem; 
-}
-
-.rodape p {
-    text-align: center; 
-    font-size: 1.4rem; 
-    margin-top: 0.5rem; 
-    color: #B71C1C;
-}
-.rodape .social { 
-    /* margin: 0 auto; */
-    color: #FAFAFA;
-    background-color: #B71C1C;  
-    display: flex; 
-    justify-content: center; 
-    align-items: center;
-    max-width: 1128px; 
-    border-radius: 2rem;
-}
-
-.rodape .social img {
-    width: 4rem; 
-    margin: 2rem 6rem;
 }
 
 @media screen and (max-width: 1128px) {
