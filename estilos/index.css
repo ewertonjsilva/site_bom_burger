@@ -124,7 +124,7 @@
     display: flex;
 }
 
-.imagemLocal {
+.principal .imagemLocal {
     width: 50%;
     border-radius: 2rem; 
     margin: 1rem;
@@ -133,18 +133,6 @@
 .principal p {
     font-size: 2rem;
     margin: 1rem; 
-}
-
-.principal {
-    margin: 1rem auto;
-    /* height: 28.5rem;  */
-    width: 98%;
-    max-width: 1128px; 
-    /* padding: 0 2rem 0 2rem;  */
-    border: 0.4rem solid #B71C1C; 
-    border-radius: 2rem;
-    /* overflow: hidden; */
-    display: flex;
 }
 
 /* Tipos */
@@ -240,5 +228,37 @@
 @media screen and (max-width: 1128px) {
     .navigation-auto {
         display: none;    
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .principal {
+        flex-direction: column; 
+        align-items: center;
+    } 
+    .principal .imagemLocal {
+        width: 98%; 
+    }
+    .principal p {
+        font-size: 1.5rem;
+        margin: 1rem; 
+    }
+    .tipos .tipo {
+        margin: 2rem 2rem; 
+    } 
+    .rodape .social img {
+        margin: 2rem 4rem;
+    }
+} 
+
+@media screen and (max-width: 425px) {
+    .tipos .tipo {
+        margin: 1rem 1rem; 
+    }
+    .rodape .social img { 
+        margin: 2rem 2rem;
+    } 
+    .prodAleatorio .cardProd { 
+        height: 20rem;
     }
 }
