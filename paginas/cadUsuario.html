@@ -13,7 +13,8 @@
         <link rel="shortcut icon" href="../imagens/favicon.ico" type="image/x-icon">
         <link rel='stylesheet' href='../estilos/reset.css'>
         <link rel='stylesheet' href='../estilos/global.css'>
-        <link rel='stylesheet' href='../estilos/nav.css'>
+        <link rel='stylesheet' href='../estilos/nav.css'> 
+        <link rel='stylesheet' href='../estilos/cadUsuario.css'>
         <title>BomBurguer</title>
     </head>
     <body>
@@ -52,13 +53,97 @@
             </nav>           
         </header>
 
-        <div>
-            <!-- Info local -->
-            Formulário cadastro usuário
+        <div class="container">
+            <div>
+                <h2>Criar uma conta</h2>
+            </div>
+            <form id="form" class="form">
+                <div class="form-control success">
+                    <label for="username">Nome de usuário</label>
+                    <div class="divInput">
+                        <input
+                            type="text"
+                            id="username"
+                            placeholder="Digite seu nome de usuário..."
+                        />
+                        <!-- <i class="fas fa-exclamation-circle"></i> -->
+                        <span class="material-icons sucesso">
+                            check_circle
+                        </span>
+                        <span class="material-icons erro">
+                            error
+                        </span>
+                        <!-- <i class="fas fa-check-circle"></i> -->
+                    </div>                    
+                    <small>Mensagem de erro</small>
+                </div>
+        
+                <div class="form-control error">
+                  <label for="email">Email</label>
+                  <div class="divInput">
+                    <input type="text" id="email" placeholder="Digite seu email.." />
+                    <span class="material-icons sucesso">
+                        check_circle
+                    </span>
+                    <span class="material-icons erro">
+                        error
+                    </span>
+                  </div>                  
+                  <small>Mensagem de erro</small>
+                </div>
+        
+                <div class="form-control success">
+                  <label for="password">Senha</label>
+                  <div class="divInput">
+                    <input
+                        type="password"
+                        id="password"
+                        placeholder="Digite sua senha..."
+                    />
+                    <span class="material-icons sucesso">
+                        check_circle
+                    </span>
+                    <span class="material-icons erro">
+                        error
+                    </span>
+                  </div>                  
+                  <small>Mensagem de erro</small>
+                </div>
+        
+                <div class="form-control error">
+                  <label for="password-confirmation">Confirmação de senha</label>
+                  <div class="divInput">
+                    <input
+                        type="password"
+                        id="password-confirmation"
+                        placeholder="Digite sua senha novamente..."
+                    />
+                    <span class="material-icons sucesso">
+                        check_circle
+                    </span>
+                    <span class="material-icons erro">
+                        error
+                    </span>
+                  </div>                  
+                  <small>Mensagem de erro</small>
+                </div>
+        
+                <button type="submit">Enviar</button>
+            </form>
         </div>
 
-        <footer>
+        <footer class="rodape">
             <!-- Dados local -->
+            <div class="social">
+                <img src="../imagens/icones/facebook.svg" alt="facebook">
+                <img src="../imagens/icones/telegram.svg" alt="">
+                <img src="../imagens/icones/whatsapp.svg" alt="">
+                <img src="../imagens/icones/tiktok.svg" alt="">
+            </div>
+            <p>Lanches BomNurguer de Cidade ME | 00.000.000/0000-00</p>
+            <p>Rua Brasil, 1000 - centro - Parapuã/SP | bbgr@bbuguer.com</p>
         </footer>
+
+        <script src='../scripts/nav.js'></script>
     </body>
 </html>

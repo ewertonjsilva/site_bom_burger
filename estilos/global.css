@@ -17,6 +17,21 @@ body {
 
 body, input, button, textarea {
     font: 400 1.6rem Roboto, sans-serif;
+} 
+
+h1 {
+    font-size: 6.1rem; 
+    margin: 1rem;
+} 
+
+h2 {
+    font-size: 4.9rem;
+    margin: 1rem;
+}
+
+h3 {
+    font-size: 3.9rem;
+    margin: 1rem;
 }
 
 /* PRODUTOS */
@@ -68,6 +83,7 @@ body, input, button, textarea {
     justify-content: center; 
     max-width: 1128px; 
     border-radius: 2rem; 
+    width: 96%;
 }
 
 .rodape p {
@@ -76,6 +92,7 @@ body, input, button, textarea {
     margin-top: 0.5rem; 
     color: #B71C1C;
 }
+
 .rodape .social { 
     /* margin: 0 auto; */
     color: #FAFAFA;

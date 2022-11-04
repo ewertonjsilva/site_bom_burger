@@ -18,7 +18,8 @@
     align-items: center; 
 } 
 
-.menuPesquisa .opPesquisa select {
+.menuPesquisa .opPesquisa select {     
+    padding: 0 2rem;
     width: 100%;
     font-size: 2rem; 
     height: 4.5rem;
@@ -26,6 +27,11 @@
     border: solid 0.5rem #B71C1C; 
     color: #B71C1C; 
     text-align: center; 
+} 
+
+.menuPesquisa .opPesquisa select option:focus {     
+    color: #FAFAFA; 
+    background-color: #B71C1C;
 } 
 
 .menuPesquisa .opPesquisa select:focus {
