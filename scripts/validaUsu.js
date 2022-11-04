@@ -3,12 +3,17 @@
 const form = document.getElementById("form");
 const username = document.getElementById("username");
 const email = document.getElementById("email");
+const estado = document.getElementById("estado");
+const cidade = document.getElementById("cidade");
 const password = document.getElementById("password");
 const passwordConfirmation = document.getElementById("password-confirmation"); 
+
 var nm = document.getElementById("valNome"); 
 var em = document.getElementById("valEmail"); 
 var sn1 = document.getElementById("validaSn1"); 
 var sn2 = document.getElementById("validaSn2"); 
+var es = document.getElementById("valEstado"); 
+var cid = document.getElementById("valCidade"); 
 
 form.addEventListener("submit", (e) => {
   e.preventDefault();
@@ -21,6 +26,8 @@ function checkInputs() {
     const emailValue = email.value;
     const passwordValue = password.value;
     const passwordConfirmationValue = passwordConfirmation.value; 
+    const estadoValue = estado.value;
+    const cidadeValue = cidade.value;
     let validado = 0;
 
     if (usernameValue === "") {
@@ -36,6 +43,20 @@ function checkInputs() {
         em.className = "form-control error";
     } else {
         em.className = "form-control success";
+        validado++;
+    }
+
+    if (cidadeValue === "0") {
+        cid.className = "form-control error";
+    } else {
+        cid.className = "form-control success";
+        validado++;
+    }
+
+    if (estadoValue === "0") {
+        es.className = "form-control error";
+    } else {
+        es.className = "form-control success";
         validado++;
     }
 
@@ -57,7 +78,7 @@ function checkInputs() {
         validado++;
     }
 
-    if (validado === 4) {
+    if (validado === 6) {
         console.log("O formulário está 100% válido!");
     }
 }
