@@ -132,6 +132,102 @@
                       </div>
                 </div>
 
+                <div class="form-control" id="valLog">
+                    <label for="logradouro">Logradouro</label>
+                    <div class="divInput">
+                        <input
+                            type="text"
+                            id="logradouro"
+                            placeholder="Digite o endereço..."
+                        />
+                        <!-- <i class="fas fa-exclamation-circle"></i> -->
+                        <span class="material-icons sucesso">
+                            check_circle
+                        </span>
+                        <span class="material-icons erro">
+                            error
+                        </span>
+                        <!-- <i class="fas fa-check-circle"></i> -->
+                    </div>                    
+                    <small>Insira os dados referente ao endereço</small>
+                </div>
+
+                <div class="doisItens">
+                    <div class="form-control" id="valNum">
+                        <label for="num">Número</label>
+                        <div class="divInput">
+                            <input
+                                type="text"
+                                id="num"
+                                placeholder="nº do endereço"
+                            />
+                          <span class="material-icons sucesso">
+                              check_circle
+                          </span>
+                          <span class="material-icons erro">
+                              error
+                          </span>
+                        </div>                  
+                        <small>Campo obrigatório!</small>
+                      </div>
+
+                      <div class="form-control" id="valBairro">
+                        <label for="bairro">Bairro</label>
+                        <div class="divInput">
+                            <input
+                                type="text"
+                                id="bairro"
+                                placeholder="Insira o nome do bairro"
+                            />
+                          <span class="material-icons sucesso">
+                              check_circle
+                          </span>
+                          <span class="material-icons erro">
+                              error
+                          </span>
+                        </div>                  
+                        <small>Selecione a cidade!</small>
+                      </div>
+                </div>
+
+                <div class="doisItens">
+                    <div class="form-control" id="valComp">
+                        <label for="comp">Complemento</label>
+                        <div class="divInput">
+                            <input
+                                type="text"
+                                id="comp"
+                                placeholder="Complemento do endereço"
+                            />
+                          <span class="material-icons sucesso">
+                              check_circle
+                          </span>
+                          <span class="material-icons erro">
+                              error
+                          </span>
+                        </div>                  
+                        <small>-</small>
+                      </div>
+
+                      <div class="form-control" id="valCelular">
+                        <label for="celular">nº celular</label>
+                        <div class="divInput">
+                            <input
+                                type="text"
+                                id="celular"
+                                placeholder="Insira o nº do celular"
+                            />
+                          <span class="material-icons sucesso">
+                              check_circle
+                          </span>
+                          <span class="material-icons erro">
+                              error
+                          </span>
+                        </div>                  
+                        <small>O nº do celular é obrigatório</small>
+                      </div>
+                </div>
+
                 <div class="form-control" id="validaSn1">
                   <label for="password">Senha</label>
                   <div class="divInput">
@@ -168,7 +264,10 @@
                   <small>Confirmação obrigatória, as senhas inseridas devem ser iguais!</small>
                 </div>
         
-                <button type="submit">Enviar</button>
+                <button type="submit">
+                    <img src="../imagens/icones/cadastrar.svg" alt="cadastrar">
+                    Enviar
+                </button>
             </form>
         </div>
 

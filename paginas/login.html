@@ -14,6 +14,7 @@
         <link rel='stylesheet' href='../estilos/reset.css'>
         <link rel='stylesheet' href='../estilos/global.css'>
         <link rel='stylesheet' href='../estilos/nav.css'>
+        <link rel='stylesheet' href='../estilos/login.css'>
         <title>BomBurguer</title>
     </head>
     <body>
@@ -52,13 +53,42 @@
             </nav>          
         </header>
 
-        <div>
-            <!-- Info local -->
-            Formulário para login
+        <div class="container">
+            <div>
+                <h2>Acessar o site</h2>
+            </div>
+            <form id="form" class="form">      
+                <input
+                    type="password"
+                    id="password"
+                    placeholder="E-mail"
+                />     
+                <input
+                    type="password"
+                    id="password"
+                    placeholder="Senha"
+                />           
+                <div class="info">
+                    <a href="./cadUsuario.html">Não tenho cadastro!</a>
+                    <a href="#">Esqueci o e-mail</a>
+                </div>
+                <button type="submit">Entrar</button>
+            </form>
         </div>
 
-        <footer>
+        <footer class="rodape">
             <!-- Dados local -->
+            <div class="social">
+                <img src="../imagens/icones/facebook.svg" alt="facebook">
+                <img src="../imagens/icones/telegram.svg" alt="">
+                <img src="../imagens/icones/whatsapp.svg" alt="">
+                <img src="../imagens/icones/tiktok.svg" alt="">
+            </div>
+            <p>Lanches BomNurguer de Cidade ME | 00.000.000/0000-00</p>
+            <p>Rua Brasil, 1000 - centro - Parapuã/SP | bbgr@bbuguer.com</p>
         </footer>
+
+        <script src='../scripts/login.js'></script>
+        <script src='../scripts/nav.js'></script>
     </body>
 </html>
