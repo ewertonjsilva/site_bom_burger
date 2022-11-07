@@ -95,7 +95,7 @@ function checkInputs() {
         validado++;
     }
 
-    if (usernameValue === "") {
+    if (celularValue === "") {
         cel.className = "form-control error";
     } else {
         cel.className = "form-control success";
