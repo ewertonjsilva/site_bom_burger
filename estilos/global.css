@@ -115,6 +115,12 @@ h3 {
     }
 }
 
+@media screen and (max-width: 480px) {
+    .rodape .social img {        
+        margin: 2rem 4rem;
+    }
+}
+
 @media screen and (max-width: 374px) {
     html {
         font-size: 48%;
