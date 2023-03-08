@@ -121,8 +121,14 @@ h3 {
     }
 }
 
-@media screen and (max-width: 374px) {
+@media screen and (max-width: 376px) {
     html {
         font-size: 48%;
+    }
+}
+
+@media screen and (max-width: 321px) {
+    html {
+        font-size: 40%;
     }
 }

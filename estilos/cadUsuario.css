@@ -159,3 +159,16 @@
 .form-control.error .divInput select {     
   border-color: #e74c3c; 
 } 
+
+@media screen and (max-width: 480px) {
+  .doisItens {
+    flex-direction: column;
+  } 
+  #valEstado {
+    width: 100%; 
+  }
+  
+  #valNum {
+    width: 100%; 
+  }
+}
