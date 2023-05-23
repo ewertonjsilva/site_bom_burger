@@ -56,3 +56,12 @@
     padding: 1rem; 
     margin-top: 2rem;
   }
+
+  .mens {
+    visibility: hidden; 
+    color: #e74c3c;
+  }
+
+  .mens.error {
+    visibility: visible;
+  }
